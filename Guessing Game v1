@@ -1,0 +1,14 @@
+#Guessing Game with while and if-else
+import random
+number=random.randint(1, 100)
+x = int(input ("Guess the number "))
+counter = 1
+while x != number:
+    if x> number:
+        print("Guess Lower ")
+    else:
+        print("Guess Higher ")
+    x= int(input("Guess again "))
+    counter+= 1
+print("You guessed correct")
+print("You took", counter ,"attempts")
